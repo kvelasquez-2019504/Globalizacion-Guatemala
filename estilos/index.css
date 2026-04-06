@@ -1,0 +1,233 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: aliceblue;
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(15, 46, 187);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: brown;
+    transform: scale(1.1);
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    /* separa del borde y centra */
+    padding: 10px;
+}
+
+/* Secciones tipo tarjeta */
+.seccion {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover tipo card */
+.seccion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores por sección */
+#departamento {
+    background-color: gray;
+    color: white;
+}
+
+#lugar_Turistico {
+    background-color: burlywood;
+    color: #4a2c2a;
+}
+
+#Gastronomia {
+    background-color: cornflowerblue;
+    color: #0f2a44;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+/* Párrafos */
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Sección multimedia */
+.multimedia {
+    text-align: center;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.galeria img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover en imágenes */
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Video responsive */
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-receta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.receta-texto {
+    flex: 1;
+}
+
+.receta-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.receta-imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background: #00AEEF;
+    color: white;
+}
+
+/* IMÁGENES CONTENEDOR */
+.imagenes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* FLIP CARD */
+.flip-card {
+    background-color: transparent;
+    width: 120px;
+    height: 120px;
+    perspective: 1000px;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-front img,
+.flip-back img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}
+
+h2 {
+  margin-top: 60px;
+  color: #111111;
+  text-align: center;
+}
+
+table {
+  margin-bottom: 40px;
+}
